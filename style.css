@@ -1,0 +1,87 @@
+/**
+* 圣诞节下雪组件-层叠样式表
+* 孟坤博客 编写
+* 文章地址： http://mkblog.cn/401/
+* 当前版本：v1.0
+* 更新日期：2016-12-24
+**/
+#snowbox{
+    text-shadow:0 0 30px #ffffff;   /*给雪花加上阴影背景*/
+}
+#mk-pop-box{
+    position: fixed;
+    z-index: 9999;
+    right: 10px;
+    bottom: 10px;
+    background: #fff;
+    width: 300px;
+    height: 160px;
+    font-size: 14px;
+    -moz-box-shadow:0 3px 10px #888;
+    -webkit-box-shadow:0 3px 10px #888;
+    -webkit-animation: fadeIn 1s linear;
+    animation: fadeIn 1s linear;
+}
+.mk-pop-title{
+    background: #C5C5C5;    /*标题栏背景*/
+    font-size: 14px;        /*标题栏文字大小*/
+    line-height: 35px;
+    padding: 0 10px;
+}
+.mk-pop-close{
+    right: 12px;
+    font-size: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+
+/*左侧图片的样式在这里修改*/
+.mk-pop-left-img{
+    display: block;
+    width: 100px;   /*图片宽度*/
+    height: 125px;  /*图片高度*/
+    float: left;
+    margin-left: 5px;
+}
+
+/*右侧显示的内容样式在这里修改*/
+.mk-pop-right-msg{
+    font-size: 20px;    /*字体大小*/
+    text-align: center;     /*对齐方式*/
+    padding: 20px 0 15px 0; /*文字边距*/
+    line-height: 30px;  /*文字行高*/
+}
+.mk-pop-tool{
+    text-align: center;
+    color: #666;
+}
+.mk-pop-tool span{
+    cursor: pointer;
+    margin: 0 5px;
+}
+.mk-pop-tool span:hover{
+    text-decoration: underline;
+}
+
+
+/*逐渐出现的动画效果*/
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(.8) translateY(20px)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1) translateY(0)
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(.8) translateY(20px)
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0)
+    }
+}
