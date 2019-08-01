@@ -1,7 +1,7 @@
 /**
 * 圣诞节下雪组件
 * 孟坤博客 编写
-* 文章地址： http://mkblog.cn/401/
+* 文章地址： https://mkblog.cn/401/
 * 当前版本：v1.0
 * 更新日期：2016-12-24
 **/
@@ -12,8 +12,8 @@ var options = {
     randColor: true,        /*是否使用随机颜色，如果选是，则下面的颜色设置无效*/
     flakeColor	: "#AFDAEF",   /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
     musicUrl: "http://p2.music.126.net/hG7Dg7Rv4jbISq1VEKvfeg==/5663584394763948.mp3",      /*背景音乐链接*/
-    imgSrc: "http://mkblog.cn/blog/plugin/snow/christmas%20tree.png",   /*弹窗左侧的图片url*/
-    styleHref: "http://mkblog.cn/blog/plugin/snow/style.css",           /*弹窗样式文件*/
+    imgSrc: "/建军节.png",   /*弹窗左侧的图片url*/
+    styleHref: "/style.css",           /*弹窗样式文件*/
     popTitle: "欢迎来访",                       /*弹窗标题*/
     popMsg: "Merry Christmas!<br>祝:圣诞快乐~", /*弹窗内容(注：字体大小等样式请前往css中更改)*/
     snow: true,         //是否默认开启下雪
