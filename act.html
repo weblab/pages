@@ -1,0 +1,33 @@
+<html>
+
+	<head>
+		<title>激活</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="author" content="http://www.javascriptbank.com" />
+		<meta name="distribution" content="Global" />
+		<meta name="copyright" content="JavaScriptBank.com" />
+		<!-- Buttons 库的核心文件 -->
+		<link rel="stylesheet" href="http://www.bootcss.com/p/buttons/css/buttons.css">
+		<!-- 引入sweetalert.js -->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/Buttons/2.0.0/js/buttons.js"></script>
+		<style>
+			#by{
+			position: relative;  
+		    top: 50%;
+		    transform: translateY(-50%);  
+		}  
+	</style>
+		<script type="text/javascript">
+			function f1() {
+				var d = new Date().valueOf();
+				swal("激活成功！", "激活校验码:" + d, "success")
+			}
+		</script>
+	</head>
+	<body>
+		<div id="By" style="text-align:center">
+			<input type="button" value="激活" class="button button-glow button-rounded button-royal" onclick="f1()" />
+		</div>
+	</BODY>
+</html>
