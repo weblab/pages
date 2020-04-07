@@ -1,35 +1,88 @@
-<!DOCTYPE html>
-<html>
+<html class="hola-html-reset hola-var">
 	<head>
-		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>前端实验室</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/weblab/static@master/page/dist/holakit.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/weblab/static@master/page/assets/demo/holakitdemo.css">
 	</head>
-	<style>
-	html{
-		background-color:black;
-	}
-	h1,h4,p,a,h5,body{
-		color: #FFFFFF;
-		font:"Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
-	}
-	</style>
-	<body>
-		前端实验室官网即将上线新版本,敬请期待!
-		<h1>
-			前端实验室 web lab
-		</h1>
-		<h4>
-			前端实验室是干嘛的? What is the web lab doing?
-		</h4>
-		<p>前端实验室是致力于推进新标准,编写贴近生活的小工具. The web lab is dedicated to advancing new standards and writing gadgets that are close to life.</p>
-		<p></p>
-		<h4 class="h4">前端实验室有官网吗? Does the web lab have an official website?</h4>
-		<p>有. Yes.</p>
-			<a href="https://web-lab.ml" title="官网">官网 Official Website</a><br/>
-			<a href="https://blog.web-lab.ml" title="博客">博客 Blog </a></p>
-		<h4 class="h4">之前的项目去哪里了? Where did the previous project go?</h4>
-		<br/>
-	<a href="https://support.qq.com/products/73180" title="反馈">戳我立即反馈问题</a><br/>
-	<img src="https://i.loli.net/2020/04/05/st4zAUYiOGRTWjo.jpg">
+	<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+	<body class="hola-body-typography hola-grey-bg">
+		<header class="hola-navbar hola-navbar-transparent hola-navbar-darkbg">
+			<div class="hola-container">
+				<nav class="hola-navbar-main">
+					<a href="#" class="hola-navbar-brand">前端实验室</a>
+				</nav>
+				<input type="checkbox" class="hola-navbar-toggle" id="navbar-toggle">
+				<label for="navbar-toggle" class="hola-navbar-toggle-label"></label>
+			</div>
+		</header>
+		<div class="hola-hero hola-hero-dark-bg hola-hero-height-extended">
+			<div class="hola-container hola-hero-content">
+				<h1>前端实验室</h1>
+				<p>捣鼓些新奇的小玩意儿。</p>
+				<a href="#content" class="hola-button hola-button-ghost">介绍</a>
+			</div>
+		</div>
+		<div class="hola-container">
+		</div>
+		<div class="hola-container hola-layout-container hola-layout-container-sidebar-right" id="content">
+			<div class="hola-layout-main hola-card-stack">
+				<div class="hola-card">
+					<h2 class="hola-card-title">作品 works</h2>
+					<div class="hola-table-container">
+						<table class="hola-table hola-table-fullwidth">
+							<thead>
+								<tr>
+									<th>作品名称 Title</th>
+									<th>网址 URL</th>
+									<!--<th>Ducimus?</th>-->
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>鸡兔同笼计算器   Chicken and Rabbit Cage Calculator</td>
+									<td><a href="https://crsc.web-lab.ml/">https://crsc.web-lab.ml/</a></td>
+								</tr>
+								<tr>
+									<td>在线验证码 Online verification code</td>
+									<td><a href="https://verification.web-lab.ml/">https://verification.web-lab.ml/</a></td>
+								</tr>
+								<tr>
+									<td>在线单位转换 Online unit conversion</td>
+									<td><a href="https://unit.web-lab.ml/">https://unit.web-lab.ml/</a></td>
+								</tr>
+								<tr>
+									<td>在线计算器 Online calculator</td>
+									<td><a href="https://calculator.web-lab.ml/">https://calculator.web-lab.ml/</a></td>
+								</tr>
+								<tr>
+									<td>在线狗屁不通文章生成器 Online article generator</td>
+									<td><a href="https://articlegenerator.web-lab.ml/">https://articlegenerator.web-lab.ml/</a></td>
+								</tr>
+								<tr>
+									<td>点击屏幕烟花效果 Tap the screen fireworks effect</td>
+									<td><a href="https://fireworks.web-lab.ml/"> https://fireworks.web-lab.ml/</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="hola-card">
+					<h2 class="hola-card-title">关于我们 About us</h2>
+					<div class="hola-content">
+						<h3>兰亭集序</h3>
+						<p>永和九年，岁在癸丑，暮春之初，会于会稽山阴之兰亭，脩稧（禊）事也。群贤毕至，少长咸集。此地有崇山峻领（岭），茂林脩竹；又有清流激湍，映带左右，引以为流觞曲水，列坐其次。虽无丝竹管弦之盛，一觞一咏，亦足以畅叙幽情。</p>
+						<p>是日也，天朗气清，惠风和畅。仰观宇宙之大，俯察品类之盛。所以游目骋怀，足以极视听之娱，信可乐也。</p>
+						<p>夫人之相与，俯仰一世，或取诸怀抱，悟言一室之内；或因寄所托，放浪形骸之外。虽趣（取/趋）舍万殊，静躁不同，当其欣于所遇，暂得于己，快然自足，不知老之将至；及其所之既倦，情随事迁，感慨系之矣。向之所欣，俯仰之间，已为陈迹，犹不能不以之兴怀；况脩短随化，终期于尽。古人云：“死生亦大矣。”岂不痛哉！</p>
+						<p>每揽（览）昔人兴感之由，若合一契，未尝不临文嗟悼，不能喻之于怀。固知一死生为虚诞，齐彭殇为妄作。后之视今，亦由（犹）今之视昔，悲夫！故列叙时人，录其所述，虽世殊事异，所以兴怀，其致一也。后之揽（览）者，亦将有感于斯文。</p>
+					</div>
+				</div>
+			</div>
+			<div class="hola-layout-sidebar">
+				<div class="hola-card" id="jinrishici-sentence">
+
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
